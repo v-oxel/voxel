@@ -18,12 +18,12 @@ let welcomeText;
 let previousHeadPositions = [];
 
 function perload() {
-    welcomeText = loadImage("../../welcomes_Монтажная область 1.png");
+    welcomeText = loadImage("welcomes_Монтажная область 1.png");
     console.log(welcomeText.width);
 }
 
 function setup() {
-    welcomeText = loadImage("../../welcomes_Монтажная область 1.png");
+    welcomeText = loadImage("welcomes_Монтажная область 1.png");
     console.log(welcomeText.width);
     window.canvas = createCanvas(windowWidth - 18, windowHeight);
     canvas.position(0, 0);
