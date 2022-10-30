@@ -1,4 +1,3 @@
-
 var blocksX = 40;
 var blocksY = 20;
 
@@ -15,13 +14,17 @@ let speedMultiplier = 1;
 let hc;
 let outlineLength = 3;
 
+let welcomeText;
 let previousHeadPositions = [];
 
 function perload() {
-
+    welcomeText = loadImage("../../welcomes_Монтажная область 1.png");
+    console.log(welcomeText.width);
 }
 
 function setup() {
+    welcomeText = loadImage("../../welcomes_Монтажная область 1.png");
+    console.log(welcomeText.width);
     window.canvas = createCanvas(windowWidth - 18, windowHeight);
     canvas.position(0, 0);
     window.canvas.style('z-index', 1);
@@ -69,6 +72,15 @@ function draw() {
         fill(255);
         noStroke();
         textSize(100);
+        if (canvas.width > 700) {
+            let newImageWidth = canvas.width - 2 * xOffset;
+            newImageWidth *= 0.6;
+            let widthRatio = newImageWidth / welcomeText.width;
+            let newImageHeight = welcomeText.height * widthRatio;
+            image(welcomeText, canvas.width / 2 - newImageWidth / 2, canvas.height / 2 - newImageHeight / 2, newImageWidth, newImageHeight);
+            fill(20, 230);
+            rect(canvas.width / 2 - newImageWidth / 2, canvas.height / 2 - newImageHeight / 2, newImageWidth, newImageHeight)
+        }
 
         fill(15);
         rect(0, 0, width, yOffset);

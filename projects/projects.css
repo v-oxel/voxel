@@ -1,0 +1,21 @@
+body {
+    background: #141414;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.linkto {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white
+}
+
+p {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white
+}

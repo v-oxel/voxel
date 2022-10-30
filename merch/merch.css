@@ -1,0 +1,59 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding-top: 2em;
+    /*background: white;*/
+
+}
+
+.projectItems {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 2em;
+}
+
+.projectItems>div {
+    text-align: center;
+}
+
+.card {
+    background: white;
+
+}
+
+.card:hover {
+    background: #e8e8e8;
+
+}
+
+.content {}
+
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1600px) {
+    .projectItems {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .projectItems {
+        grid-template-columns: 1fr;
+
+    }
+
+    .content {
+
+        font-size: 80%;
+    }
+
+    .title.is-4 {
+        font-size: 1em;
+    }
+}

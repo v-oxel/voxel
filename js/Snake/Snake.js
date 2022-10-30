@@ -118,7 +118,6 @@ class Snake {
 
         }
         if (minDiist === 100000) {
-            print("AHHHHHHHHHHH");
             return this.cycle[(hc.getNodeNo(this.x, this.y) + 1) % this.cycle.length];
         }
 
